@@ -28,7 +28,7 @@ app.post("/merge", upload.array("pdfs", 2), async (req, res, next) => {
         console.log(req.files);
         //run the padfmerger function thats takes two pdfs
         await pdfmerger(path.join(req.files[0].path), path.join(req.files[1].path));
-        res.sendFile(path.join(__dirname, "merged/merged.pdf"));
+        res.sendFile(path.join(__dirname, "public/merged.pdf"));
 });
 
 app.listen(3000, () => {

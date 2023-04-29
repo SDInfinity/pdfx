@@ -4,7 +4,7 @@ import fs from "fs";
 const merger = new pdfMerger();
 
 export const pdfmerger = async (p1,p2)=>{
-        const mergedFilePath = 'merged/merged.pdf';
+        const mergedFilePath = 'public/merged.pdf';
 
   // Remove the previously merged file
   if (fs.existsSync(mergedFilePath)) {
