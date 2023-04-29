@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Merger</title>
+</head>
+<body>
+    <h1>PDFX - Your pdf merger tool.</h1>
+    <form action="/merge" class="form" method="post"  enctype="multipart/form-data"> 
+        <label for="" class="select">Select files to merge:</label>
+        <input type="file" name="pdfs" class="file" accept=".pdf" multiple>
+        <input type="submit" class="submit" placeholder="Submit" value="submit">
+    </form>
+    <p>Refresh to merge two new pdfs.</p>
+</body>
+</html>
